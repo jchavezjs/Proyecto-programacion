@@ -1,0 +1,67 @@
+.indicators{
+	display: none;
+}
+.avatar-account{
+	background: #000;
+	margin: 8px 4px 0 0;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	background: url(../img/foto.jpg) center center;
+}
+.complete-height{
+	padding:2px 1px 5px 0.5em;
+}
+.nav-wrapper{
+	padding-left: 0.8em; 
+	padding-right: 0.8em;
+}
+.logo{
+	font-weight: black;
+}
+.description{
+	width: 30%;
+	float: left;
+}
+.price{
+	width: 40%;
+}
+.no-padding{
+	padding: 0;
+}
+.no-margin{
+	margin: 0;
+}
+.sale{
+	background: #f4f4f4;
+}
+.marca{
+	font-size: 20px;
+	color: #454444;
+}
+.name{
+	font-size: 16px;
+	color: #909090;
+}
+.sale-description{
+	line-height: 1;
+}
+.price{
+	font-size: 25px;
+	color: #616161;
+	font-weight: 100;
+	vertical-align: middle;
+}
+.add-cart a{
+	margin-left: 20px;
+}
+.info{
+	font-size: 60px;
+}
+.section-title{
+	margin: 0 0 1em;0
+}
+.identidad{
+	padding: 1em 0 0 0;
+}
