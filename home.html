@@ -15,9 +15,6 @@
 	<!--Google fonts material icons-->
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
-	 <!--icomoon-->
-	 <link rel="stylesheet" href="css/style.css">
-
 	<!--Materialize css-->
 	<link rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 
@@ -45,7 +42,7 @@
 		    	</ul>
 		    </div>
 		    <a class="hide-on-med-and-down btn-floating waves-effect waves-light light-green cart">
-			  	<span class="icon-cart"></span>
+			  	<i class="material-icons">shopping_cart</i>
 			</a>
 
 		    <div class="sub-nav">
@@ -78,29 +75,29 @@
 	    	<li>
 	        	<img src="img/slide1.jpg"> <!-- random image -->
 		        <div class="caption center-align">
-		          <h3>This is our big Tagline!</h3>
-		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		          <h3>Descubre nuevas posibilidades</h3>
+		          <h5 class="light grey-text text-lighten-3">Nuevos productos cada semana</h5>
 		        </div>
 	    	</li>
 	    	<li>
 		        <img src="img/slide2.jpg"> <!-- random image -->
 		        <div class="caption left-align">
-		          <h3>Left Aligned Caption</h3>
-		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		          <h3>Las mejores marcas</h3>
+		          <h5 class="light grey-text text-lighten-3">los mejores productos del mercado</h5>
 		        </div>
 	    	</li>
 	    	<li>
 		        <img src="img/slide3.jpg"> <!-- random image -->
 		        <div class="caption right-align">
-		          <h3>Right Aligned Caption</h3>
-		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		          <h3>Sigue adelante</h3>
+		          <h5 class="light grey-text text-lighten-3">Calidad comprobada</h5>
 		        </div>
 	    	</li>
 	    	<li>
 		        <img src="img/slide4.jpg"> <!-- random image -->
 		        <div class="caption center-align">
-		          <h3>This is our big Tagline!</h3>
-		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		          <h3>A tu alcance</h3>
+		          <h5 class="light grey-text text-lighten-3">Los mejores precios</h5>
 		        </div>
 	    	</li>
 	    </ul>
@@ -126,7 +123,7 @@
 			              		<span class="price">$67.00</span>
 			            	</div>
 							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green">
+								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
 			  						<i class="material-icons">add</i>
 			  					</a>
 		  					</div>	
@@ -149,7 +146,7 @@
 			              		<span class="price">$67.00</span>
 			            	</div>
 							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green">
+								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
 			  						<i class="material-icons">add</i>
 			  					</a>
 		  					</div>	
@@ -172,7 +169,7 @@
 			              		<span class="price">$67.00</span>
 			            	</div>
 							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green">
+								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
 			  						<i class="material-icons">add</i>
 			  					</a>
 		  					</div>	
@@ -195,7 +192,7 @@
 			              		<span class="price">$67.00</span>
 			            	</div>
 							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green">
+								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
 			  						<i class="material-icons">add</i>
 			  					</a>
 		  					</div>	
@@ -211,28 +208,49 @@
 	          <div class="row">
 	            <div class="col s12 m4">
 	              <div class="center promo">
-	                <i class="material-icons info">flash_on</i>
-	                <p class="promo-caption">Speeds up development</p>
-	                <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+	                <i class="material-icons info">grade</i>
+	                <p class="promo-caption">Tienda de calidad</p>
+	                <p class="light center">Tenemos 20 años de experiencia dentro de la venta de equipo deportivo. Poseemos productos de marcas reconocidas en el mundo con calidad asegurada y la variedad mas grande de cualquier tienda en la región.</p>
 	              </div>
 	            </div>
 
 	            <div class="col s12 m4">
 	              <div class="center promo">
 	                <i class="material-icons info">group</i>
-	                <p class="promo-caption">User Experience Focused</p>
-	                <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+	                <p class="promo-caption">Personal capacitado</p>
+	                <p class="light center">Nuestro equipo esta debidamente preparado para atenderlo de la manera mas oportuna y atendiendo a sus necesidades. Nuestro equipo de soporte virtual se encuentra siempre disponible para cualquier consulta.</p>
 	              </div>
 	            </div>
 
 	            <div class="col s12 m4">
 	             	<div class="center promo">
-		                <i class="material-icons info">settings</i>
-		                <p class="promo-caption">Easy to work with</p>
-		                <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+		                <i class="material-icons info">room</i>
+		                <p class="promo-caption">Mejor ubicación</p>
+		                <p class="light center">Nuestras sucursales se encuentran en los mejores centros comerciales del pais. Nuesta ubicacion accesible nos ayuda a estar cerca de nuestros clientes y poderles brindar una atención personalizada.</p>
 	             	</div>
 	            </div>
 	        </div>
+	    </article>
+	    <article id="encuentranos">
+	    	<h3 class="center section-title">Encuentranos</h3>
+	    	<div class="row">
+	    		<div class="col s12 m8">
+		        	<div class="card blue-grey darken-1">
+			           <iframe src="https://www.google.com/maps/d/embed?mid=zINt_1Z31sCE.kwWYeAqtbFz0" width="100%" height="400px"></iframe>
+		        	</div>
+        		</div>
+        		<div class="col s12 m4">
+			        <div class="card-panel no-padding">
+			        	<ul class="collection with-header">
+					        <li class="collection-header"><h4>Siguenos</h4></li>
+					        <li class="collection-item"><div>Facebook<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
+					        <li class="collection-item"><div>Twitter<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
+					        <li class="collection-item"><div>Instagram<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
+					        <li class="collection-item"><div>Google+<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
+					    </ul>
+		        	</div>
+      			</div>
+	    	</div>
 	    </article>
     </section>
 	<footer class="page-footer indigo">
@@ -240,7 +258,7 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">SportCenter</h5>
-                <p class="grey-text text-lighten-4">Visita los tsitios oficiales de nuestro proveedores.</p>
+                <p class="grey-text text-lighten-4">Visita los sitios oficiales de nuestro proveedores.</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
