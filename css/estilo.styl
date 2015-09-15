@@ -1,3 +1,6 @@
+
+.nav-wrap
+	height 9.2em
 .indicators
 	display none
 
@@ -10,15 +13,57 @@
 	overflow hidden
 	background url(../img/foto.jpg) center center
 
-.complete-height
-	padding 2px 1px 5px 0.5em
 
 .nav-wrapper
 	padding-left 0.8em
 	padding-right 0.8em
-
+	padding-top 0.8em
+	.sub-nav
+		padding-top 4.5em
+		a
+			opacity 0.6
+			line-height 55px
+			&:hover
+				opacity 1
+				background #303f9f 
+				border-bottom 4px solid #8bc34a
+	.account
+		position absolute
+		top 0
+		right 0
+		margin-right 27px
+		cursor pointer
+		opacity 0.6
+		ul 
+			li
+				margin-right 1em
+			/*&:hover
+				border-bottom 3px solid #000
+			.men-nav:hover
+				opacity 1
+				background #303f9f */
+	.cart
+		font-family icomoon
+		position absolute
+		bottom 0
+		right 0
+		margin-right 30px
+		margin-bottom -23px
+		z-index 5
+		width 3.5em
+		height 3.5em
+		span
+			font-size 1.5em
+			margin-left 13px
+			vertical-align middle
+			padding-top 7px
+				
 .logo
 	font-weight black
+	display block
+	margin-left 16px
+	font-size 2.5rem !important
+	font-weight 300
 
 .description
 	width 30%
@@ -65,3 +110,11 @@
 
 .identidad
 	padding 1em 0 0 0
+	
+
+@media (max-width: 900px)
+	.nav-wrap
+		height 6em
+
+	
+
