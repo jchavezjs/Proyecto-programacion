@@ -24,14 +24,20 @@
 <body>
 	
 	<!--Barra de navegación-->
+
+	<!--Dropdown-->
+	<ul id="dropdown1" class="dropdown-content">
+	  <li><a href="#!">Perfil</a></li>
+	  <li class="divider"></li>
+	  <li><a href="home.html">Cerrar sesión</a></li>
+	</ul>
 	<nav class="nav-wrap">
 	    <div class="nav-wrapper indigo darken-2">
 		    <a href="home.html" class="logo brand-logo">SportCenter</a>
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		    <div class="hide-on-med-and-down account">
 		    	<ul>
-		    		<li class="men-nav">Registrate</li>
-		    		<li class="men-nav"><a href="home_usuario.html">Ingresar</a></li>
+		    		<li class="men-nav dropdown-button complete-height" data-activates="dropdown1">Jaime Chávez</li>
 		    	</ul>
 		    </div>
 		    <a class="hide-on-med-and-down btn-floating waves-effect waves-light light-green cart">
@@ -40,20 +46,23 @@
 
 		    <div class="sub-nav">
 			    <ul class="hide-on-med-and-down">
-			    	<li><a href="home.html#novedades" class="men-nav">Novedades</a></li>
-			    	<li><a href="home.html#identidad" class="men-nav">¿Quienes somos?</a></li>
-			    	<li><a href="#home.html#encuentranos" class="men-nav">Encuentranos</a></li>
+			    	<li><a href="home_usuario.html#novedades" class="men-nav">Novedades</a></li>
+			    	<li><a href="home_usuario.html#identidad" class="men-nav">¿Quienes somos?</a></li>
+			    	<li><a href="home_usuario.html#encuentranos" class="men-nav">Encuentranos</a></li>
 			    	<li><a href="#!" class="men-nav">Catalogo</a></li>
+			        <li>
+			        	
+			        </li>
 			    </ul>
 		    </div>
 		    <ul class="side-nav" id="mobile-demo">
-		    	<li><a href="home.html">Inicio</a></li>
-		    	<li><a href="home.html#novedades">Novedades</a></li>
-		    	<li><a href="home.html#identidad">¿Quienes somos?</a></li>
-		    	<li><a href="home.html#encuentranos">¿Quienes somos?</a></li>
+		    	<li><a href="home_usuario.html">Inicio</a></li>
+		    	<li><a href="home_usuario.html#novedades">Novedades</a></li>
+		    	<li><a href="home_usuario.html#identidad">¿Quienes somos?</a></li>
+		    	<li><a href="home_usuario.html#encuentranos">Encuentranos</a></li>
 		        <li><a href="#!">Mi Carrito</a></li>
-		        <li><a href=""!"">Registrarse</a></li>
-		        <li><a href="#!">Ingresar</a></li>
+		        <li><a href=""!"">Perfil</a></li>
+		        <li><a href="home.html">Cerrar sesión</a></li>
 		    </ul>
 	    </div>
 	</nav>  
