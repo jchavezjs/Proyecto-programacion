@@ -1,79 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-
-	<!--Meta tags-->
-
-	<meta charset="UTF-8"/>
-	<meta name="description" content="Tienda online especializada en venta de vestuario y calzado deportivo.">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-
-	<title>Home</title>
-
-	<!--Stylesheets-->
-
-	<!--Google fonts material icons-->
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-
-	<!--Materialize css-->
-	<link rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-
-	<!--Production stylesheet-->
-	<link rel="stylesheet" href="css/estilo.css"/>
-</head>
-<body>
-	
-	<!--Barra de navegación-->
-
-	<!--Dropdown-->
-	<ul id="dropdown1" class="dropdown-content">
-	  <li><a href="#!">Perfil</a></li>
-	  <li class="divider"></li>
-	  <li><a href="home.html">Cerrar sesión</a></li>
-	</ul>
-	<nav class="nav-wrap">
-	    <div class="nav-wrapper indigo darken-2">
-		    <a href="home.html" class="logo brand-logo">SportCenter</a>
-		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		    <div class="hide-on-med-and-down account">
-		    	<ul>
-		    		<li class="men-nav dropdown-button complete-height" data-activates="dropdown1">Jaime Chávez</li>
-		    	</ul>
-		    </div>
-		    <a class="hide-on-med-and-down btn-floating waves-effect waves-light light-green cart">
-			  	<i class="material-icons">shopping_cart</i>
-			</a>
-
-		    <div class="sub-nav">
-			    <ul class="hide-on-med-and-down">
-			    	<li><a href="home_usuario.html#novedades" class="men-nav">Novedades</a></li>
-			    	<li><a href="home_usuario.html#identidad" class="men-nav">¿Quienes somos?</a></li>
-			    	<li><a href="home_usuario.html#encuentranos" class="men-nav">Encuentranos</a></li>
-			    	<li><a href="catalogo.html" class="men-nav">Catálogo</a></li>
-			        <li>
-			        	
-			        </li>
-			    </ul>
-		    </div>
-		    <ul class="side-nav" id="mobile-demo">
-		    	<li><a href="home_usuario.html">Inicio</a></li>
-		    	<li><a href="home_usuario.html#novedades">Novedades</a></li>
-		    	<li><a href="home_usuario.html#identidad">¿Quienes somos?</a></li>
-		    	<li><a href="home_usuario.html#encuentranos">Encuentranos</a></li>
-		    	<li><a href="catalogo.html">Catálogo</a></li>
-		        <li><a href="#!">Mi Carrito</a></li>
-		        <li><a href=""!"">Perfil</a></li>
-		        <li><a href="home.html">Cerrar sesión</a></li>
-		    </ul>
-	    </div>
-	</nav>  
-    
-    <!--Slider-->
 
 	<div class="slider">
 	    <ul class="slides">
 	    	<li>
-	        	<img src="img/slide1.jpg"> <!-- random image -->
+	        	<img src="img/slide1.jpg"/> <!-- random image -->
 		        <div class="caption center-align">
 		          <h3>Descubre nuevas posibilidades</h3>
 		          <h5 class="light grey-text text-lighten-3">Nuevos productos cada semana</h5>
@@ -102,6 +31,8 @@
 	    	</li>
 	    </ul>
 	</div>
+
+	<script src="js/slider.js"></script>
 
 	<!--Novedades-->
 	<section>
@@ -245,7 +176,7 @@
 					        <li class="collection-header"><h4>Siguenos</h4></li>
 					        <li class="collection-item"><div>Facebook<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
 					        <li class="collection-item"><div>Twitter<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
-					        <li class="collection-item"><div>Instagram<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
+					     	<li class="collection-item"><div>Instagram<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
 					        <li class="collection-item"><div>Google+<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
 					    </ul>
 		        	</div>
@@ -253,39 +184,3 @@
 	    	</div>
 	    </article>
     </section>
-	<footer class="page-footer indigo">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">SportCenter</h5>
-                <p class="grey-text text-lighten-4">Visita los sitios oficiales de nuestro proveedores.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Nike</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Adidas</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">New Balance</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Puma</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2015 Copyright. Todos los derechos reservados.
-            <a class="grey-text text-lighten-4 right" href="#!">info@sportcenter.com</a>
-            </div>
-          </div>
-        </footer>
-
-	<!-- Javascript's libraries files-->
-
-	<script src="lib/jquery-2.1.4.min.js"></script>
-	<script src="lib/angular.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-
-	<!--Production javascript´s files-->
-	<script src="js/script.js"></script>
-</body>
-</html>

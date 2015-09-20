@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" ng-app="app">
 <head>
 
 	<!--Meta tags-->
@@ -20,13 +20,16 @@
 
 	<!--Production stylesheet-->
 	<link rel="stylesheet" href="css/estilo.css"/>
+	<script src="lib/jquery-2.1.4.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	
 	<!--Barra de navegación-->
+
 	<nav class="nav-wrap">
 		<div class="nav-wrapper indigo darken-2">
-			<a href="home.html" class="logo brand-logo">SportCenter</a>
+			<a href="#/inicio" class="logo brand-logo">SportCenter</a>
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			<div class="hide-on-med-and-down account">
 				<ul>
@@ -42,10 +45,10 @@
 
 		    <div class="sub-nav">
 			    <ul class="hide-on-med-and-down">
-			    	<li><a href="home.html#novedades" class="men-nav">Novedades</a></li>
-			    	<li><a href="home.html#identidad" class="men-nav">¿Quienes somos?</a></li>
-			    	<li><a href="#home.html#encuentranos" class="men-nav">Encuentranos</a></li>
-			    	<li><a href="catalogo.html" class="men-nav">Catálogo</a></li>
+			    	<li><a href="#/inicio#novedades" class="men-nav">Novedades</a></li>
+			    	<li><a href="#/inicio#identidad" class="men-nav">¿Quienes somos?</a></li>
+			    	<li><a href="#/inicio#encuentranos" class="men-nav">Encuentranos</a></li>
+			    	<li><a href="#/catalogo" class="men-nav">Catálogo</a></li>
 			    </ul>
 		    </div>
 		    <ul class="side-nav" id="mobile-demo">
@@ -59,193 +62,13 @@
 		        <li><a class="modal-trigger xx" href="#modal2">Ingresar</a></li>
 		    </ul>
 	    </div>
-	</nav>  
-    
-    <!--Slider-->
+	</nav> 
+	
+    <div ng-view>
+    	
 
-	<div class="slider">
-	    <ul class="slides">
-	    	<li>
-	        	<img src="img/slide1.jpg"> <!-- random image -->
-		        <div class="caption center-align">
-		          <h3>Descubre nuevas posibilidades</h3>
-		          <h5 class="light grey-text text-lighten-3">Nuevos productos cada semana</h5>
-		        </div>
-	    	</li>
-	    	<li>
-		        <img src="img/slide2.jpg"> <!-- random image -->
-		        <div class="caption left-align">
-		          <h3>Las mejores marcas</h3>
-		          <h5 class="light grey-text text-lighten-3">los mejores productos del mercado</h5>
-		        </div>
-	    	</li>
-	    	<li>
-		        <img src="img/slide3.jpg"> <!-- random image -->
-		        <div class="caption right-align">
-		          <h3>Sigue adelante</h3>
-		          <h5 class="light grey-text text-lighten-3">Calidad comprobada</h5>
-		        </div>
-	    	</li>
-	    	<li>
-		        <img src="img/slide4.jpg"> <!-- random image -->
-		        <div class="caption center-align">
-		          <h3>A tu alcance</h3>
-		          <h5 class="light grey-text text-lighten-3">Los mejores precios</h5>
-		        </div>
-	    	</li>
-	    </ul>
-	</div>
-
-	<!--Novedades-->
-	<section>
-		<article id="novedades">
-			<h3 class="center section-title">Novedades</h3>
-			<div class="row">
-				<div class="col s12 m6 l3">
-		          <div class="card sale hoverable">
-		            <div class="card-image">
-		              <img src="img/sale1.jpg" width="400px" height="250px">
-		            </div>
-		            <div class="card-content sale-description">
-		            	<div class="row no-margin">
-			            	<div class="col s6 description">
-			              		<span class="marca">NIKE FREE</span><br>
-			              		<span class="name">Pisada Natural</span>
-			            	</div>
-			            	<div class=" col s3 price">
-			              		<span class="price">$67.00</span>
-			            	</div>
-							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
-			  						<i class="material-icons">add</i>
-			  					</a>
-		  					</div>	
-	  					</div>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="col s12 m6 l3">
-		          <div class="card sale hoverable">
-		            <div class="card-image">
-		              <img src="img/sale2.jpg" width="400px" height="250px">
-		            </div>
-		            <div class="card-content sale-description">
-		            	<div class="row no-margin">
-			            	<div class="col s6 description">
-			              		<span class="marca">NIKE FREE</span><br>
-			              		<span class="name">Pisada Natural</span>
-			            	</div>
-			            	<div class=" col s3 price">
-			              		<span class="price">$67.00</span>
-			            	</div>
-							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
-			  						<i class="material-icons">add</i>
-			  					</a>
-		  					</div>	
-	  					</div>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="col s12 m6 l3">
-		          <div class="card sale hoverable">
-		            <div class="card-image">
-		              <img src="img/sale3.jpg" width="400px" height="250px">
-		            </div>
-		            <div class="card-content sale-description">
-		            	<div class="row no-margin">
-			            	<div class="col s6 description">
-			              		<span class="marca">NIKE FREE</span><br>
-			              		<span class="name">Pisada Natural</span>
-			            	</div>
-			            	<div class=" col s3 price">
-			              		<span class="price">$67.00</span>
-			            	</div>
-							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
-			  						<i class="material-icons">add</i>
-			  					</a>
-		  					</div>	
-	  					</div>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="col s12 m6 l3">
-		          <div class="card sale hoverable">
-		            <div class="card-image">
-		              <img src="img/sale4.jpg" width="400px" height="250px">
-		            </div>
-		            <div class="card-content sale-description">
-		            	<div class="row no-margin">
-			            	<div class="col s6 description">
-			              		<span class="marca">NIKE FREE</span><br>
-			              		<span class="name">Pisada Natural</span>
-			            	</div>
-			            	<div class=" col s3 price">
-			              		<span class="price">$67.00</span>
-			            	</div>
-							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
-			  						<i class="material-icons">add</i>
-			  					</a>
-		  					</div>	
-	  					</div>
-		            </div>
-		          </div>
-		        </div>
-			</div>
-		</article>
-		<!--   Promo Section   -->
-		<article id="identidad" class="identidad ">
-			<h3 class="center section-title">¿Quienes Somos?</h3>
-	          <div class="row">
-	            <div class="col s12 m4">
-	              <div class="center promo">
-	                <i class="material-icons info">grade</i>
-	                <p class="promo-caption">Tienda de calidad</p>
-	                <p class="light center">Tenemos 20 años de experiencia dentro de la venta de equipo deportivo. Poseemos productos de marcas reconocidas en el mundo con calidad asegurada y la variedad mas grande de cualquier tienda en la región.</p>
-	              </div>
-	            </div>
-
-	            <div class="col s12 m4">
-	              <div class="center promo">
-	                <i class="material-icons info">group</i>
-	                <p class="promo-caption">Personal capacitado</p>
-	                <p class="light center">Nuestro equipo esta debidamente preparado para atenderlo de la manera mas oportuna y atendiendo a sus necesidades. Nuestro equipo de soporte virtual se encuentra siempre disponible para cualquier consulta.</p>
-	              </div>
-	            </div>
-
-	            <div class="col s12 m4">
-	             	<div class="center promo">
-		                <i class="material-icons info">room</i>
-		                <p class="promo-caption">Mejor ubicación</p>
-		                <p class="light center">Nuestras sucursales se encuentran en los mejores centros comerciales del pais. Nuesta ubicacion accesible nos ayuda a estar cerca de nuestros clientes y poderles brindar una atención personalizada.</p>
-	             	</div>
-	            </div>
-	        </div>
-	    </article>
-	    <article id="encuentranos">
-	    	<h3 class="center section-title">Encuentranos</h3>
-	    	<div class="row">
-	    		<div class="col s12 m8">
-		        	<div class="card blue-grey darken-1">
-			           <iframe src="https://www.google.com/maps/d/embed?mid=zINt_1Z31sCE.kwWYeAqtbFz0" width="100%" height="400px"></iframe>
-		        	</div>
-        		</div>
-        		<div class="col s12 m4">
-			        <div class="card-panel no-padding">
-			        	<ul class="collection with-header">
-					        <li class="collection-header"><h4>Siguenos</h4></li>
-					        <li class="collection-item"><div>Facebook<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
-					        <li class="collection-item"><div>Twitter<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
-					        <li class="collection-item"><div>Instagram<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
-					        <li class="collection-item"><div>Google+<a href="#!" class="secondary-content"><i class="material-icons">stars</i></a></div></li>
-					    </ul>
-		        	</div>
-      			</div>
-	    	</div>
-	    </article>
-    </section>
+    </div>
+	
 	<footer class="page-footer indigo">
           <div class="container">
             <div class="row">
@@ -339,12 +162,13 @@
 
 	<!-- Javascript's libraries files-->
 
-	<script src="lib/jquery-2.1.4.min.js"></script>
+	
 	<script src="lib/angular.min.js"></script>
-	<script src="lib/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular-route.js"></script>
 	<script src="js/materialize.min.js"></script>
+	<script src="js/app.js"></script>
 
 	<!--Production javascript´s files-->
-	<script src="js/script.js"></script>
+	
 </body>
 </html>
