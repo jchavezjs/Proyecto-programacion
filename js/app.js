@@ -16,10 +16,10 @@ angular.module("app", ["ngRoute"])
                 controllerAs: "vm",
                 templateUrl: "templates/carrito.html"
             })
-            .when("/opciones", {
+            .when("/profile", {
                 controller: "appCtrl",
                 controllerAs: "vm",
-                templateUrl: "opciones.html"
+                templateUrl: "templates/profile.html"
             });
     })
     .controller("appCtrl", function(){
