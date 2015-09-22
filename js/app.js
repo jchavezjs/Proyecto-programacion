@@ -11,6 +11,11 @@ angular.module("app", ["ngRoute"])
                 controllerAs: "vm",
                 templateUrl: "templates/catalogo.html"
             })
+            .when("/carrito", {
+                controller: "carritoCtrl",
+                controllerAs: "vm",
+                templateUrl: "templates/carrito.html"
+            })
             .when("/opciones", {
                 controller: "appCtrl",
                 controllerAs: "vm",

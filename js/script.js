@@ -5,4 +5,7 @@ $( document ).ready(function(){
 
     /*modal*/
      $('.modal-trigger').leanModal();
+
+     $('select').material_select();
+
 })

@@ -8,7 +8,7 @@
 	<meta name="description" content="Tienda online especializada en venta de vestuario y calzado deportivo.">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 
-	<title>Home</title>
+	<title>SportCenter</title>
 
 	<!--Stylesheets-->
 
@@ -21,6 +21,7 @@
 	<!--Production stylesheet-->
 	<link rel="stylesheet" href="css/estilo.css"/>
 	<script src="lib/jquery-2.1.4.min.js"></script>
+  <script src="js/materialize.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -39,7 +40,7 @@
 					<li><a class="modal-trigger xx" href="#modal2">Ingresar</a></li>
 		    	</ul>
 		    </div>
-		    <a class="hide-on-med-and-down btn-floating waves-effect waves-light light-green cart">
+		    <a class="hide-on-med-and-down btn-floating waves-effect waves-light light-green cart" href="#/carrito">
 			  	<i class="material-icons">shopping_cart</i>
 			</a>
 
@@ -52,12 +53,12 @@
 			    </ul>
 		    </div>
 		    <ul class="side-nav" id="mobile-demo">
-		    	<li><a href="home.html">Inicio</a></li>
-		    	<li><a href="home.html#novedades">Novedades</a></li>
-		    	<li><a href="home.html#identidad">¿Quienes somos?</a></li>
-		    	<li><a href="home.html#encuentranos">Encuentranos</a></li>
-		    	<li><a href="catalogo.html">Catálogo</a></li>
-		        <li><a href="#!">Mi Carrito</a></li>
+		    	<li><a href="#/inicio">Inicio</a></li>
+		    	<li><a href="#/inicio#novedades">Novedades</a></li>
+		    	<li><a href="#/inicio#identidad">¿Quienes somos?</a></li>
+		    	<li><a href="#/inicio#encuentranos">Encuentranos</a></li>
+		    	<li><a href="#/catalogo">Catálogo</a></li>
+		        <li><a href="#/carrito">Mi Carrito</a></li>
 		        <li><a class="modal-trigger xx" href="#modal1">Registrarse</a></li>
 		        <li><a class="modal-trigger xx" href="#modal2">Ingresar</a></li>
 		    </ul>
@@ -100,7 +101,8 @@
   <div id="modal1" class="modal modal-fixed-footer">
     <div class="modal-content">
     <div class="container">
-      <h4>Ingrese sus datos</h4>
+      <h4><i class="material-icons info">content_paste</i>Ingrese sus datos</h4>
+      <form action="#">
       <p class="mod-margin">
         <div class="input-field col s6">
           <input id="first_name" type="text" class="validate">
@@ -110,11 +112,15 @@
           <input id="last_name" type="text" class="validate">
           <label for="last_name">Apellidos</label>
         </div>
-        <ul id="dropdown2" class="dropdown-content">
-      <li><a href="#!">Masculino<span class="badge"></span></a></li>
-      <li><a href="#!">Femenino<span class="badge"></span></a></li>
-    </ul>
-    <a class="btn dropdown-button" href="#!" data-activates="dropdown2">Sexo<i class="mdi-navigation-arrow-drop-down right"></i></a>
+         <div class="input-field ">
+        <select>
+          <option value="" disabled selected>Sexo</option>
+        <option value="1">Masculino</option>
+        <option value="2">Femenino</option>
+        </select>
+      </div>
+    
+        
 <div class="input-field col s6">
           <input id="user" type="text" class="validate">
           <label for="user">Usuario</label>
@@ -127,10 +133,20 @@
           <input id="email" type="email" class="validate">
           <label for="email">Email</label>
         </div>
-      <button class="btn waves-effect waves-light modal-action modal-close" type="submit" name="action">Listo
+        <div class="file-field input-field">
+      <div class="btn">
+        <span>Foto de Perfil</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+      <button class="btn waves-effect waves-light modal-action modal-close light-green" type="submit" name="action">Listo
       <i class="material-icons right">send</i>
       </button>
       </p>
+      </form>
         </div>
   </div>
   </div>       
@@ -140,6 +156,7 @@
     	<div class="modal-content">
 		<div class="container mod-margin">
     		<h4>Ingresar</h4>
+        <form action="#">
     		<p  class="mod-margin">
 
     			<div class="input-field col s6">
@@ -151,10 +168,11 @@
     				<input id="password" type="password" class="validate">
     				<label for="password"><i class="material-icons right">lock</i>Contraseña</label>
     			</div>
-    			<button class="btn waves-effect waves-light modal-action modal-close" type="submit" href="home_usuario.html" name="action">Ingresar
+    			<button class="btn waves-effect waves-light modal-action modal-close light-green" type="submit" href="home_usuario.html" name="action">Ingresar
     				<i class="material-icons right">send</i>
     			</button>
     		</p>
+        </form>
     	</div>
     </div>
 </div>
@@ -165,7 +183,7 @@
 	
 	<script src="lib/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular-route.js"></script>
-	<script src="js/materialize.min.js"></script>
+	
 	<script src="js/app.js"></script>
 
 	<!--Production javascript´s files-->
