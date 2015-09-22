@@ -1,7 +1,7 @@
 angular.module("app", ["ngRoute"])
     .config(function($routeProvider){
         $routeProvider
-            .when("/inicio", {
+            .when("/", {
                 controller: "appCtrl",
                 controllerAs: "vm",
                 templateUrl: "templates/inicio.html"
