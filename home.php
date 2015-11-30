@@ -1,11 +1,9 @@
-<<<<<<< HEAD
+
 <?php
   session_start();
   include 'procesos/conexion.php';
 ?>
 
-=======
->>>>>>> origin/master
 <!DOCTYPE html>
 <html lang="es" ng-app="app">
 <head>
@@ -42,7 +40,7 @@
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			<div class="hide-on-med-and-down account">
 				<ul>
-<<<<<<< HEAD
+
           <?php
             if (isset($_SESSION['usuario'])){
     					echo "<li><a href='procesos/logout.php'>Cerrar Sesión</a></li>";
@@ -52,13 +50,6 @@
             }
           ?>
           </ul>
-=======
-					<!-- Modal 1 -->
-					<li><a class="modal-trigger xx" href="#modal1">Registrarse</a></li>
-					<!-- Modal 2 -->
-					<li><a class="modal-trigger xx" href="#modal2">Ingresar</a></li>
-		    	</ul>
->>>>>>> origin/master
 		    </div>
 		    <a class="hide-on-med-and-down btn-floating waves-effect waves-light light-green cart" href="#/carrito">
 			  	<i class="material-icons">shopping_cart</i>
@@ -176,37 +167,23 @@
     	<div class="modal-content">
 		<div class="container mod-margin">
     		<h4>Ingresar</h4>
-<<<<<<< HEAD
+
         <form action="procesos/login.php" method="post">
     		<p  class="mod-margin">
 
-    			<div class="input-field col s6">
-    				<input id="user" name="usuario" type="text" class="validate">
-=======
-        <form action="procesos/login,php">
-    		<p  class="mod-margin">
+          <div class="input-field col s6">
+            <input id="user" name="usuario" type="text" class="validate">
+            <label for="user"><i class="material-icons right">supervisor_account</i> Usuario</label>
 
-    			<div class="input-field col s6">
-    				<input id="user" type="text" class="validate">
->>>>>>> origin/master
-    				<label for="user"><i class="material-icons right">supervisor_account</i> Usuario</label>
-
-    			</div>
-    			<div class="input-field col s6">
-<<<<<<< HEAD
-    				<input id="password" name="clave" type="password" class="validate">
-    				<label for="password"><i class="material-icons right">lock</i>Contraseña</label>
-    			</div>
-    			<button name="login" class="btn waves-effect waves-light modal-action modal-close light-green" href="#/profile" name="action">Ingresar
-=======
-    				<input id="password" type="password" class="validate">
-    				<label for="password"><i class="material-icons right">lock</i>Contraseña</label>
-    			</div>
-    			<button class="btn waves-effect waves-light modal-action modal-close light-green" href="#/profile" name="action">Ingresar
->>>>>>> origin/master
-    				<i class="material-icons right">send</i>
-    			</button>
-    		</p>
+          </div>
+          <div class="input-field col s6">
+            <input id="password" name="clave" type="password" class="validate">
+            <label for="password"><i class="material-icons right">lock</i>Contraseña</label>
+          </div>
+          <button class="btn waves-effect waves-light modal-action modal-close light-green" name="login">Ingresar
+            <i class="material-icons right">send</i>
+          </button>
+        </p>
         </form>
     	</div>
     </div>
