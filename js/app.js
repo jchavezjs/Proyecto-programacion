@@ -4,22 +4,22 @@ angular.module("app", ["ngRoute"])
             .when("/", {
                 controller: "appCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/inicio.html"
+                templateUrl: "templates/inicio.php"
             })
             .when("/catalogo", {
                 controller: "catalogoCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/catalogo.html"
+                templateUrl: "templates/catalogo.php"
             })
             .when("/carrito", {
                 controller: "carritoCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/carrito.html"
+                templateUrl: "templates/carrito.php"
             })
             .when("/profile", {
                 controller: "appCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/profile.html"
+                templateUrl: "templates/profile.php"
             });
     })
     .controller("appCtrl", function(){
