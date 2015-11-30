@@ -4,27 +4,27 @@ angular.module("panel", ["ngRoute"])
             .when("/", {
                 controller: "appCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/panel_inicio.html"
+                templateUrl: "templates/panel_inicio.php"
             })
             .when("/productos", {
                 controller: "catalogoCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/productos.html"
+                templateUrl: "templates/productos.php"
             })
             .when("/usuarios", {
                 controller: "carritoCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/usuarios.html"
+                templateUrl: "templates/usuarios.php"
             })
             .when("/compras", {
                 controller: "carritoCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/compras.html"
+                templateUrl: "templates/compras.php"
             })
             .when("/profile", {
                 controller: "appCtrl",
                 controllerAs: "vm",
-                templateUrl: "templates/profile.html"
+                templateUrl: "templates/profile.php"
             });
     })
     .controller("appCtrl", function(){
