@@ -43,7 +43,7 @@
 
           <?php
             if (isset($_SESSION['usuario'])){
-    					echo "<li><a href='procesos/logout.php'>Cerrar Sesión</a></li>
+    					echo "<li><a href='#/profile'>Perfil</a></li>
                     <li><a href='procesos/logout.php'>Cerrar Sesión</a></li>";
             }else{
               echo "<li><a class='modal-trigger xx' href='#modal1'>Registrarse</a></li>
@@ -71,8 +71,15 @@
 		    	<li><a href="#/#encuentranos">Encuentranos</a></li>
 		    	<li><a href="#/catalogo">Catálogo</a></li>
 		        <li><a href="#/carrito">Mi Carrito</a></li>
-		        <li><a class="modal-trigger xx" href="#modal1">Registrarse</a></li>
-		        <li><a class="modal-trigger xx" href="#modal2">Ingresar</a></li>
+		         <?php
+            if (isset($_SESSION['usuario'])){
+              echo "<li><a href='#/profile.php'>Perfil</a></li>
+                    <li><a href='procesos/logout.php'>Cerrar Sesión</a></li>";
+            }else{
+              echo "<li><a class='modal-trigger xx' href='#modal1'>Registrarse</a></li>
+              <li><a class='modal-trigger xx' href='#modal2'>Ingresar</a></li>";
+            }
+          ?>
 		    </ul>
 	    </div>
 	</nav> 
@@ -114,47 +121,47 @@
     <div class="modal-content">
     <div class="container">
       <h4><i class="material-icons info">content_paste</i>Ingrese sus datos</h4>
-      <form action="#">
+      <form action="procesos/registrarUsuario.php" method="post">
       <p class="mod-margin">
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
+          <input id="first_name" name="nombre" type="text" class="validate">
           <label for="first_name">Nombres</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
+          <input id="last_name" name="apellido" type="text" class="validate">
           <label for="last_name">Apellidos</label>
         </div>
          <div class="input-field ">
-        <select>
+        <select name="sexo">
           <option value="" disabled selected>Sexo</option>
         <option value="1">Masculino</option>
-        <option value="2">Femenino</option>
+        <option value="0">Femenino</option>
         </select>
       </div>
     
         
 <div class="input-field col s6">
-          <input id="user" type="text" class="validate">
+          <input id="user" type="text" class="validate" name="usuario">
           <label for="user">Usuario</label>
         </div>
         <div class="input-field col s6">
-          <input id="password" type="password" class="validate">
+          <input id="password" type="password" class="validate" name="contrasena">
           <label for="password">Contraseña</label>
         </div>
         <div class="input-field col s6">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" class="validate" name="correo">
           <label for="email">Email</label>
         </div>
         <div class="file-field input-field">
       <div class="btn">
         <span>Foto de Perfil</span>
-        <input type="file">
+        <input type="file" name="foto">
       </div>
       <div class="file-path-wrapper">
         <input class="file-path validate" type="text">
       </div>
     </div>
-      <button class="btn waves-effect waves-light modal-action modal-close light-green" type="submit" name="action">Listo
+      <button class="btn waves-effect waves-light modal-action modal-close light-green" type="submit" name="registrar">Listo
       <i class="material-icons right">send</i>
       </button>
       </p>

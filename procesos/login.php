@@ -10,6 +10,13 @@
 			$row = mysql_fetch_array($log);
 			$_SESSION["usuario"] = $row['usuario'];
 			$_SESSION["privilegio"] = $row['privilegio'];
+			$_SESSION["nombre"] = $row['nombre'];
+			$_SESSION["apellido"] = $row['apellido'];
+			$_SESSION["sexo"] = $row['sexo'];
+			$_SESSION["correo"] = $row['correo'];
+			$_SESSION["usuario"] = $row['usuario'];
+			$_SESSION["contrasena"] = $row['contrasena'];
+			$_SESSION["ruta"] = $row['rutaFoto'];
 		}else{
 			echo '<script>alert("usuario o contraseña invalidos");</script>';
 		}
