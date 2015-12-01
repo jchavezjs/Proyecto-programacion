@@ -43,7 +43,8 @@
 
           <?php
             if (isset($_SESSION['usuario'])){
-    					echo "<li><a href='procesos/logout.php'>Cerrar Sesión</a></li>";
+    					echo "<li><a href='procesos/logout.php'>Cerrar Sesión</a></li>
+                    <li><a href='procesos/logout.php'>Cerrar Sesión</a></li>";
             }else{
               echo "<li><a class='modal-trigger xx' href='#modal1'>Registrarse</a></li>
               <li><a class='modal-trigger xx' href='#modal2'>Ingresar</a></li>";
