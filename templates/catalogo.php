@@ -25,7 +25,7 @@
 			              		<span class="price">$<?php echo $producto['precio'];?></span>
 			            	</div>
 							<div class="add-cart col s3">
-								<a class="btn-floating waves-effect waves-light light-green" onclick="Materialize.toast('Producto agregado', 4000)">
+								<a class="btn-floating waves-effect waves-light light-green" href="procesos/agregarCarrito.php?id=<?php echo $producto['idProducto'];?>" onclick="Materialize.toast('Producto agregado', 4000)">
 			  						<i class="material-icons">add</i>
 			  					</a>
 		  					</div>	

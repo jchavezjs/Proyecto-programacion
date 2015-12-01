@@ -29,7 +29,7 @@
 			$nuevoNombre = $usuario.".jpg";
 			//cambiamos el nombre de la imagen por la ruta anterios y la tura nueva.
 			rename($destino,"../img/".$nuevoNombre);
-			
+			echo '<script> window.location="../";</script>';
 		}
 	}
  ?>

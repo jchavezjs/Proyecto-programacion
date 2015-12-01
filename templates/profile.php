@@ -6,7 +6,7 @@
     <div class="col s12 m4 l3 profile-wrap">
       <section id="avatar" class="avatar">
       <article id="avatar1" class="avatar1">
-        <?php echo "<img src='".$_SESSION["ruta"]."'>";?>
+        <?php echo "<img src='".$_SESSION["ruta"]."' width='230px' height='230px'>";?>
       </article>
         </section>
       </div>
