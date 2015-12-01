@@ -1,7 +1,6 @@
 
 <?php
   session_start();
-  include 'procesos/conexion.php';
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +57,6 @@
 
 		    <div class="sub-nav">
 			    <ul class="hide-on-med-and-down">
-			    	<li><a href="#/#novedades" class="men-nav">Novedades</a></li>
 			    	<li><a href="#/#identidad" class="men-nav">¿Quienes somos?</a></li>
 			    	<li><a href="#/#encuentranos" class="men-nav">Encuentranos</a></li>
 			    	<li><a href="#/catalogo" class="men-nav">Catálogo</a></li>
@@ -66,7 +64,6 @@
 		    </div>
 		    <ul class="side-nav" id="mobile-demo">
 		    	<li><a href="#/">Inicio</a></li>
-		    	<li><a href="#/#novedades">Novedades</a></li>
 		    	<li><a href="#/#identidad">¿Quienes somos?</a></li>
 		    	<li><a href="#/#encuentranos">Encuentranos</a></li>
 		    	<li><a href="#/catalogo">Catálogo</a></li>
@@ -155,7 +152,7 @@
         <div class="file-field input-field">
       <div class="btn">
         <span>Foto de Perfil</span>
-        <input type="file" name="foto">
+        <input type="file" name="fot">
       </div>
       <div class="file-path-wrapper">
         <input class="file-path validate" type="text">

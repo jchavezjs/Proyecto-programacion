@@ -22,8 +22,8 @@
 			//Abrimos el directorio con el comnado OPENDIR, y le decimos dentro donde esta especificada la ruta.
 			opendir($carpeta);
 			//creamos una variable destino que me va almacenar el nombre.
-			$destino = $carpeta.$_FILES['foto']['name'];
-			copy($_FILES['foto']['tmp_name'] , $destino);
+			$destino = $carpeta.$_FILES[$_POST['fot']]['name'];
+			copy($_FILES[$_POST['fot']]['tmp_name'] , $destino);
 			//le cambiamos el nombre de la imagen por medio de la variable xD ...
 			$nuevoNombre = $usuario.".jpg";
 			//cambiamos el nombre de la imagen por la ruta anterios y la tura nueva.
