@@ -173,7 +173,7 @@
 		<div class="container mod-margin">
     		<h4>Ingresar</h4>
 
-        <form action="procesos/login.php" method="post">
+        <form action="procesos/login.php" method="post" enctype="multipart/form-data">
     		<p  class="mod-margin">
 
           <div class="input-field col s6">
