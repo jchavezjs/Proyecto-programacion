@@ -1,7 +1,7 @@
 <section id="sc" class="sc">
   <h3 class="section-title center" >
     
-    Compras </h3> 
+    Inventario </h3> 
 </section>
 <section id="tablasc" class="tablasc" >
   <table id="tabla" class=" bordered striped centered responsive-table">
@@ -11,41 +11,33 @@
               <th data-field="descripcion">Descripcion</th>
               <th data-field="precio">Precio</th>
               <th data-field="cantidad">Cantidad</th>
-              <th data-field="cantidad">Usuario</th>
-              <th data-field="cantidad">Fecha</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr>
-            <td><img class="materialboxed image-cart" src="img/sale1.jpg"></td>
-            <td><p class="promo-caption">Nike Free</p></td>
-            <td><p class="promo-caption">5.0 Running Shoe</p></td>
-            <td><p class="promo-caption">$67.00</p></td>
-            <td>
-           <p class="promo-caption">2</p>
-      </td>
-      <td><p class="promo-caption">jchavez</p></td>
-      <td><p class="promo-caption">23/9/2015</p></td>
-          </tr>
-          <tr>
-            <td><img class="materialboxed image-cart" src="img/sale2.jpg" width="200px" ></td>
-            <td><p class="promo-caption">Nike Free</p></td>
-            <td><p class="promo-caption">4.0 Running Shoe</p></td>
-            <td><p class="promo-caption">$67.00</p></td>
-             <td><p class="promo-caption">2</p>
-      </td>
-      <td><p class="promo-caption">jchavez</p></td>
-      <td><p class="promo-caption">23/9/2015</p></td>
-          <tr>
-            <td><img class="materialboxed image-cart" src="img/sale3.jpg" width="200px"></td>
-            <td><p class="promo-caption">Nike Free</p></td>
-            <td><p class="promo-caption">7.0 Running Shoe</p></td>
-            <td><p class="promo-caption">$67.00</p></td>
-           <td><p class="promo-caption">2</p>
-      </td>
-      <td><p class="promo-caption">jchavez</p></td>
-      <td><p class="promo-caption">23/9/2015</p></td>
+        <?php 
+          include '../procesos/conexion.php';
+          $sql = mysql_query("SELECT * FROM producto");
+          while ($row = mysql_fetch_array($sql)) {
+            $idProducto = $row['idProducto'];
+            $foto = $row['rutaFoto'];
+            $nombre = $row['nombre'];
+            $descripcion = $row['descripcion'];
+            $precio = $row['precio'];
+            $sql1 = mysql_query("SELECT SUM(cantidad) FROM entrada Where idProducto='$idProducto'");
+            $cantidad1 = mysql_result($sql1, 0);
+            $sql2 = mysql_query("SELECT SUM(cantidad) FROM salida Where idProducto='$idProducto'");
+            $cantidad2 = mysql_result($sql2, 0); ;
+            echo "<tr>
+              <td><img class='materialboxed image-cart' src='$foto'></td>
+              <td><p class='promo-caption'>$nombre</p></td>
+              <td><p class='promo-caption'>$descripcion</p></td>
+              <td><p class='promo-caption'>$". $precio ."</p></td>
+              <td><p class='promo-caption'>".($cantidad1 - $cantidad2)."</p></td>
+            </tr>";
+          }
+        ?>
+          
         </tbody>
       </table>
 </section>

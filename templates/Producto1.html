@@ -1,0 +1,51 @@
+
+<section class="contenedor2" id="contenedor2">
+	<form method="POST" action="procesos/Ausuarios.php" action="#">
+	<div class="row">
+		<div class="col s12 m12 l12 table-margin"><h3>Agregar Productos</h3></div>
+		
+		<div class="col s12 m6 l6">
+			<div>
+			
+					<div class="row">
+						<div class="input-field ">
+							<select name="ID producto">
+								<option value="1"></option>
+								
+							</select>
+							<label>ID producto</label>
+						</div>
+					</div>
+			
+			</div>
+        
+			<div class="row">
+			
+					<div class="row">
+						<div class="input-field">
+							<textarea id="cantidad" name="cantidad" class="materialize-textarea"></textarea>
+							<label for="cantidad">Cantidad</label>
+						</div>
+					</div>
+				
+			</div>	
+</div>
+		
+</div>
+<div class="row">
+
+<div class="col s6 l3"><button class="btn waves-effect waves-light" type="submit" name="Agregar">Agregar<i class="material-icons right">send</i></button></div>
+		
+</form>
+
+
+
+
+
+	
+</section>
+ <script>
+ $(document).ready(function() {
+    $('select').material_select();
+  });
+ </script>

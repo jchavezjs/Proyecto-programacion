@@ -33,22 +33,23 @@
 </section>	
 	 
 <section class="contenedor-login" id="contenedor-login">
+        <form method="post" action="procesos/loga.php">
         <p>
 
           <div class="input-field col s6">
-            <input id="user" type="text" class="validate">
+            <input id="user" type="text" name="usuario" class="validate">
             <label for="user"><i class="material-icons right">supervisor_account</i> Usuario</label>
 
           </div>
           <div class="input-field col s6 margin-pass">
-            <input id="password" type="password" class="validate">
+            <input id="password" type="password" name="clave" class="validate">
             <label for="password"><i class="material-icons right">lock</i>Contraseña</label>
           </div>
-          <a class="btn waves-effect waves-light modal-action modal-close" type="submit" href="panel_home.php" name="action">Ingresar
+          <button class="btn waves-effect waves-light modal-action modal-close" name="login">Ingresar
             <i class="material-icons right">send</i>
-          </a>
+          </button>
         </p>
- 
+ 		</form>
 </section>
 	
 	<script src="lib/angular.min.js"></script>

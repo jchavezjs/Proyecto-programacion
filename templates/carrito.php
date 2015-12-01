@@ -62,7 +62,6 @@
               <th data-field="producto">Producto</th>
               <th data-field="descripcion">Descripcion</th>
               <th data-field="precio">precio</th>
-              <th data-field="cantidad">cantidad</th>
           </tr>
         </thead>
         <tbody>
@@ -74,24 +73,13 @@
             <td><p class="promo-caption"><?php echo $datos[$i]['Nombre'];?></p></td>
             <td><p class="promo-caption"><?php echo $datos[$i]['Descripcion']?></p></td>
             <td><p class="promo-caption"><?php echo $datos[$i]['Precio']?></p></td>
-            <td>
-            <div class="input-field">
-    <select>
-    <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-    </select>
-  </div>
-      </td>
-      <td>    <a class="waves-effect waves-light light-green btn espacio"><i class="material-icons right ">delete</i>Eliminar</a></td>
+            
           </tr>
           <?php }?>
             <td></td>
+            <td><a class="waves-effect waves-light  btn espacio" href="procesos/cancelar.php"><i class="material-icons right ">check_circle</i>Cancelar</a></td>
             <td></td>
-            <td><strong>Total</strong></td>
-            <td><strong><p class="promo-caption">$201.00</p></strong></td>
-            <td></td>
-            <td><a class="waves-effect waves-light  btn espacio"><i class="material-icons right ">check_circle</i>Confirmar compra</a></td>
+            <td><a class="waves-effect waves-light  btn espacio" href="procesos/confirmar.php"><i class="material-icons right ">check_circle</i>Confirmar compra</a></td>
         </tbody>
       </table>
 

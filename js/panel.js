@@ -21,6 +21,11 @@ angular.module("panel", ["ngRoute"])
                 controllerAs: "vm",
                 templateUrl: "templates/compras.php"
             })
+            .when("/agregar", {
+                controller: "carritoCtrl",
+                controllerAs: "vm",
+                templateUrl: "templates/Producto1.html"
+            })
             .when("/profile", {
                 controller: "appCtrl",
                 controllerAs: "vm",

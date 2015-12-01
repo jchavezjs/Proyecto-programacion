@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if (!isset($_SESSION['usuario'])){
+    echo '<script> window.location="panel.php";</script>';
+  }
+?>
 <!DOCTYPE html>
 <html lang="es" ng-app="panel">
 <head>
@@ -27,7 +33,7 @@
 <body>
 	<ul id="dropdown1" class="dropdown-content">
 	  <li><a href="#/profile">Perfil</a></li>
-	  <li><a href="panel.php">Cerrar Sesión</a></li>
+	  <li><a href='procesos/logouta.php'>Cerrar Sesión</a></li>
 	</ul>
 	<nav>
 	  <div class="nav-wrapper red darken-4">
@@ -39,7 +45,7 @@
 	     <ul class="side-nav" id="mobile-demo">
 	     <li><a href="#/">Inicio</a></li>
         <li><a href="#/profile">Perfil</a></li>
-        <li><a href="panel.php">Cerrar Sesión</a></li>
+        <li><a href='procesos/logouta.php'>Cerrar Sesión</a></li>
       </ul>
 	  </div>
 	</nav>
