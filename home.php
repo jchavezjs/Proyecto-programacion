@@ -118,7 +118,7 @@
     <div class="modal-content">
     <div class="container">
       <h4><i class="material-icons info">content_paste</i>Ingrese sus datos</h4>
-      <form action="procesos/registrarUsuario.php" method="post">
+      <form action="procesos/registrarUsuario.php" method="post" enctype="multipart/form-data">
       <p class="mod-margin">
         <div class="input-field col s6">
           <input id="first_name" name="nombre" type="text" class="validate">
@@ -152,7 +152,7 @@
         <div class="file-field input-field">
       <div class="btn">
         <span>Foto de Perfil</span>
-        <input type="file" name="fot">
+        <input type="file" name="foto">
       </div>
       <div class="file-path-wrapper">
         <input class="file-path validate" type="text">
